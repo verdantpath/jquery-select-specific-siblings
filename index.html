@@ -12,9 +12,18 @@
   <h2>Section title</h2>
   <p>More content</p>
 </div>
+<ul>
+  <li>first item</li>
+  <li class="selected">Second item</li>
+  <li>third item</li>
+  <li>fourth item</li>
+  <li>fifth item</li>
+</ul>
 <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/Javascript">
-
+  // $('h1 + h2').addClass('selected'); // selects only h2's that are immediately following and h1
+  // $('h1').siblings('h2, h3, p').addClass('selected'); // selects all siblings that are filtered in the parameter
+  
 </script>
 </body>
 </html>
